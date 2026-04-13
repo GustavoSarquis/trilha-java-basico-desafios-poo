@@ -1,39 +1,4 @@
 # trilha-java-basico-desafios-poo  
 # Diagrama
-classDiagram
-    class ReprodutorMusical {
-        <<interface>>
-        +tocar() void
-        +pausar() void
-        +selecionarMusica(String musica) void
-    }
+<img width="1909" height="941" alt="image" src="https://github.com/user-attachments/assets/20e1abf4-2b4f-464e-8070-1d59ff7413b0" />
 
-    class AparelhoTelefonico {
-        <<interface>>
-        +ligar(String numero) void
-        +atender() void
-        +iniciarCorreioVoz() void
-    }
-
-    class NavegadorInternet {
-        <<interface>>
-        +exibirPagina(String url) void
-        +adicionarNovaAba() void
-        +atualizarPagina() void
-    }
-
-    class iPhone {
-        +tocar() void
-        +pausar() void
-        +selecionarMusica(String musica) void
-        +ligar(String numero) void
-        +atender() void
-        +iniciarCorreioVoz() void
-        +exibirPagina(String url) void
-        +adicionarNovaAba() void
-        +atualizarPagina() void
-    }
-
-    iPhone ..|> ReprodutorMusical
-    iPhone ..|> AparelhoTelefonico
-    iPhone ..|> NavegadorInternet
